@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INQUIRIES</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="main.html"><img src="images/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-cloud" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="wants.html">WANTS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="info.html">SURVEY</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Rate My Website</h1>
+    </section>
+
+    <!----------rate--------->
+
+    <section class="rate-us">
+      <div class="row">
+        <div class="rate-col">
+          <div>
+            <span>
+              <h5>RYAN CARLOS B. ROMERO</h5>
+              <p>WEB CREATOR </p>
+            </span>
+          </div>
+        </div>
+      </div>
+        <div class="rate-col">
+          <form action="form-handler.php" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Email Address"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter Your Rating /10"
+              required
+            />
+            <textarea
+              rows="8"
+              name="nessage"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button type="submit" class="hero-btn redbtn">Message Me Now!</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!---footer---->
+
+    <section class="footer">
+      <h4>About Me</h4>
+      <p>Web Design Principles</p>
+      <div class = "icons">
+          <i class ="fa fa-facebook"></i>
+      </div>
+      <a href="https://www.facebook.com/ryancarlos.romero/">Ryan Carlos Romero</a>
+  </section>
+
+    <!---------Javascript for toggle menu------------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

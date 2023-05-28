@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLOG</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="main.html"><img src="images/adu.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-cloud" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="wants.html">WANTS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="info.html">SURVEY</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Blog</h1>
+    </section>
+
+    <!-----------blog--------->
+
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img src="images\kapee.jpg" alt="" />
+          <h2>TITO'S ICED COFFEE, PALPITATE NOOO MOREEE </h2>
+          <p>
+          Tito Ry's Original Iced Coffee is a delightful beverage that combines sweetness and strength in perfect harmony. 
+          Its rich flavor profile satisfies the taste buds without causing any palpitations. 
+          With every sip, you can experience a refreshing sensation that revitalizes your senses. 
+          This drink has become Tito Ry's go-to choice, showcasing his preference for a delicious and invigorating beverage.
+          </p>
+          <p>Driven by his passion for coffee, Tito Ry aspires to transform his love for the beverage into a thriving business. 
+            With his dream of opening a coffee shop, he envisions a space where he can share his Original Iced Coffee with everyone. 
+            Tito Ry aims to create a warm and inviting atmosphere where customers can enjoy the perfect cup of coffee and create lasting memories. 
+            Through his dedication and commitment, he hopes to establish his brand and become a go-to destination for coffee enthusiasts, leaving a lasting impression on all who taste his creations.
+            
+          </p>
+
+          <div class="comment-box">
+            <h3>Leave a comment</h3>
+
+            <form class="comment-form">
+              <input type="text" placeholder="Enter Name" />
+              <input type="email" placeholder="Enter Email" />
+              <textarea rows="5" placeholder="Your Comment"></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                Post Comment
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="blog-right">
+          <h3>Best Iced Coffee Evahhh!!!</h3>  
+          <div>
+            <span>Coffee:</span>
+            <span> Nescafe Classic or Gold</span>
+          </div>
+          <div>
+            <span>Sugar:</span>
+            <span>MILO is the best Alternative</span>
+          </div>
+          <div>
+            <span>Ice:</span>
+            <span> Ice Cube from the sari-sari store is the best!!</span>
+          </div>
+          <div>
+            <span>Preperation Time:</span>
+            <span>20 MINUTES! NEEDS TO HAVE LOVE WHEN MAKING</span>
+          </div>
+          <div>
+            <span>Best Time to Drink:</span>
+            <span>EVERYTIME!(MIDNIGHT HEHEHE)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---footer---->
+
+    <section class="footer">
+      <h4>About Me</h4>
+      <p>Web Design Principles</p>
+      <div class = "icons">
+          <i class ="fa fa-facebook"></i>
+      </div>
+      <a href="https://www.facebook.com/ryancarlos.romero/">Ryan Carlos Romero</a>
+  </section>
+
+    <!---------Javascript for toggle menu------------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WANTS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="main.html"><img src="images/adu.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-cloud" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="wants.html">WANTS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="info.html">SURVEY</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>WANTS</h1>
+    </section>
+
+    <!-------wants--------->
+
+    <section class="wants">
+      <h1>Tito's Wants but do not HAVE!</h1>
+      <p>KOBE SHOES | EXPRESSO MACHINE | LAPTOP</p>
+
+      <div class="row">
+        <div class="wants-col">
+          <img src="images\KOBS.jpg" alt="" />
+          <h3>KOBE SHOES</h3>
+          <p>
+            Tito Ry is an avid fan of Kobe Bryant and harbors a deep desire to one day 
+            have his own signature shoe, inspired by the basketball legend.
+          </p>
+        </div>
+        <div class="wants-col">
+          <img src="images\VEND.jpg" alt="" />
+          <h3>EXPRESSO MACHINE</h3>
+          <p>
+            Tito Ry's unwavering love for coffee has fueled his desire to own a coffee vending machine, 
+            as he is captivated by the process of brewing and creating his favorite caffeinated beverages.
+          </p>
+        </div>
+        <div class="wants-col">
+          <img src="images\LAP.jpg" alt="" />
+          <h3>LAPTOP</h3>
+          <p>Tito Ry aspires to acquire a laptop as it serves as an essential tool for his educational 
+            pursuits, enabling him to effectively engage in schoolwork, research, and various academic tasks.        
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!------about------->
+
+    <section class="about">
+      <h1>Tito's Go-To-Food</h1>
+      <p>KWEK-KWEK | SIOPAO | ICE CREAM </p>
+
+      <div class="row">
+        <div class="about-col">
+          <img src="images\KWEK.jpg" alt="" />
+          <div class="layer">
+            <h3>KWEK-KWEK </h3>
+          </div>
+        </div>
+        <div class="about-col">
+          <img src="images\SIO.jpg" alt="" />
+          <div class="layer">
+            <h3>SIOPAO</h3>
+          </div>
+        </div>
+        <div class="about-col">
+          <img src="images\ICE.jpg" alt="" />
+          <div class="layer">
+            <h3>ICE CREAM</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---footer---->
+
+    <section class="footer">
+        <h4>About Me</h4>
+        <p>Web Design Principles</p>
+        <div class = "icons">
+            <i class ="fa fa-facebook"></i>
+        </div>
+        <a href="https://www.facebook.com/ryancarlos.romero/">Ryan Carlos Romero</a>
+    </section>
+
+    <!---------Javascript for toggle menu------------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
